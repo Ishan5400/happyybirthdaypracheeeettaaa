@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pracheeta 🎉</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Syne:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Syne', sans-serif;
+      background: linear-gradient(145deg, #fdf0d5, #fbc5a9);
+      color: #2d2d2d;
+      text-align: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-family: 'Monoton', cursive;
+      font-size: 3.5rem;
+      color: #000;
+      text-shadow: 2px 2px #ffbb00;
+    }
+
+    header p {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+      color: #4b2e83;
+      margin-top: 1rem;
+    }
+
+    .intro-section {
+      margin: 2rem auto;
+      padding: 1rem;
+      max-width: 800px;
+      font-size: 1.2rem;
+    }
+
+    .click-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .click-btn:hover {
+      background-color: #ffbb00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    #gallery {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .photo {
+      position: relative;
+      width: 280px;
+      height: 320px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      background-color: #fff;
+    }
+
+    .photo:hover {
+      transform: translateY(-10px);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: 'Pacifico', cursive;
+      transform: translateY(100%);
+      transition: transform 0.3s;
+    }
+
+    .photo:hover .caption {
+      transform: translateY(0);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      background-color: #fbc5a9;
+      color: #000;
+      font-family: 'Syne', sans-serif;
+    }
+
+    /* Music Controls */
+    audio {
+      display: none;
+    }
+
+    .music-note {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Birthday Pracheeta 🎂</h1>
+    <p>You deserve the entire universe, but I made you this instead ✨</p>
+  </header>
+
+  <div class="intro-section">
+    <p>the chaos of kanYe. Here’s to you, Pracheeta .</p>
+    <button class="click-btn" onclick="revealGallery()">Click Me 💿</button>
+  </div>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="C:\Users\Public\New folder\SpotiDownloader.com - Bound 2 - Kanye West.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="kanyeMusic">
+    <source src="kanye_song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-note">🎵</div>
+
+  <div id="gallery" class="gallery">
+    <!-- Repeatable Photo Blocks -->
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_84d5f0c9.jpg" alt="Pracheeta 1">
+      <div class="caption">“Reach for the stars, so if you fall, you land on a cloud.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_c5cda925.jpg" alt="Pracheeta 2">
+      <div class="caption">“Keep your nose out the sky, keep your heart to God, and keep your face to the rising sun.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_1495a271.jpg" alt="Pracheeta 3">
+      <div class="caption">“We're gonna touch the sky, baby girl.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_6e8e33e6.jpg" alt="Pracheeta 4">
+      <div class="caption">“You’re the number one, with the lemonade.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="WhatsApp Image 2025-05-15 at 22.04.05_d48d11ae.jpg" alt="Pracheeta 5">
+      <div class="caption">"My presence is a present, kiss my ass."</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.04.05_a25facb1.jpg" alt="Pracheeta 6">
+      <div class="caption">“Everything I’m not made me everything I am.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.04.05_3912b04b.jpg" alt="Pracheeta 7">
+      <div class="caption">“I’m living in that 21st century, doing something mean to it.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.04.05_22b0bed0.jpg" alt="Pracheeta 8">
+      <div class="caption">“For me, givin' up's way harder than tryin'.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_c8d5cb29.jpg" alt="Pracheeta 9">
+      <div class="caption">“Love your haters – they’re your biggest fans.”</div>
+    </div>
+
+    <div class="photo">
+      <img src="C:\Users\Public\New folder\WhatsApp Image 2025-05-15 at 22.02.29_b417bca0.jpg" alt="Pracheeta 10">
+      <div class="caption">"You weren't perfect, but you made life worth it."</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built with chaos just like Kanye would want it.</p>
+    <p>From your homeboy 👾</p>
+  </footer>
+
+  <script>
+    function revealGallery() {
+      document.querySelector('.click-btn').style.display = 'none';
+      document.getElementById('gallery').style.display = 'flex';
+      document.getElementById('bgMusic').pause();
+      document.getElementById('kanyeMusic').play();
+    }
+  </script>
+</body>
+</html>
